@@ -1,0 +1,215 @@
+/* Base styles */
+body {
+  font-family: 'Arial', sans-serif;
+  /* font-family は CSS のプロパティで、選択した要素に対して、フォントファミリー名や総称ファミリー名の優先順位リストを指定することができます。'Arial'	第一候補のフォント。Windowsなどでよく使われる読みやすいフォント
+sans-serif	第二候補のフォント。Arialが使えない場合に使われる「ゴシック体」系のフォント */
+  line-height: 1.6;
+  /* line-height は CSS のプロパティで、書字方向が水平の場合は、行ボックスの高さを設定します。 */
+  margin: 0;
+  /* margin: 0;意味：要素の**外側の余白（マージン）**をゼロにします。 */
+  padding: 0;
+  /* padding:内側の余白 を指定するプロパティ */
+  text-align: center;
+  /* ext-align: center;   /* 中央寄せ */
+  background-color: #f7f7f8;
+  color: #333;
+  /* color:要素内の文字の色を設定 */
+}
+
+/* Layout containers */
+header {
+  background: #413e7b;
+  /* background は CSS の一括指定プロパティで、色、画像、原点と寸法、反復方法など、背景に関するすべてのスタイルプロパティを一括で設定します。 background 一括指定プロパティの値宣言で設定されていない成分のプロパティは、既定値に設定されます。 */
+  color: white;
+  padding: 1em;
+}
+
+
+.double-line {
+  border-bottom: 2px double black;
+}
+
+
+nav ul {
+  list-style: none;
+  /* 箇条書きのマークを消す */
+  display: flex;
+  /* display: flex; 要素を柔軟に並べる（横並びが基本） */
+  gap: 1em;
+  /* gap は、子要素同士の間隔を設定するプロパティです。1em は、現在のフォントサイズの1倍の長さを意味します。 */
+  justify-content: center;
+  /* ustify-content は、横並びの要素の配置方法を決めるプロパティです。center を指定すると、中央に揃えます。 */
+  padding: 0;
+  /* padding は CSS の一括指定プロパティで、要素の全四辺のパディング領域を一度に設定します。 
+  要素のパディング領域とは、コンテンツと境界との間の領域のことです*/
+}
+
+div ul {
+  list-style-type: none;
+  padding-left: 0;
+  /* padding-left は CSS のプロパティで、要素のパディング領域における左側の幅を設定します。 */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  /* CSSプロパティ text-decoration は、テキストに装飾（下線、上線、取り消し線など）を加えるために使われます。その中で none を指定すると、テキストの装飾をすべて無効化 */
+}
+
+main {
+  list-style: none;
+  padding: 2em;
+}
+
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  /* 要素間のスペース */
+  margin-bottom: 2em;
+}
+
+
+.name div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+
+.sunflower {
+  height: 200px; /* お好みの高さに調整 */
+  display: block;
+  margin: 0 auto; /* 中央揃え */
+}
+
+
+
+section {
+  margin-bottom: 2em;
+  /* このCSSプロパティは、要素の下部に余白（マージン）を設定するものです。
+2em は相対単位で、現在のフォントサイズの2倍の高さの余白を意味します。 */
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  /* text-align は CSS のプロパティで、ブロック要素または表のセルボックス内におけるインラインレベルコンテンツの水平方向の配置を設定します。つまり、 vertical-align と同じように機能しますが、水平方向に機能します。 */
+  padding: 1em;
+}
+
+/* Slot machine container */
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 30px;
+  color: #4a90e2;
+}
+
+/* h2 {
+  text-align: left;
+} */
+
+#bluebox {
+  width: 300px;
+  background-color: rgb(109, 109, 192);
+  margin: 0 auto;
+  color: #333;
+}
+
+.slot-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.slot {
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  /* justify-content: center;このCSSプロパティは、Flexbox や Grid レイアウトで使われ、主軸（通常は横方向）に沿って要素を中央揃えにします。 */
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* このCSSプロパティは、要素に影（シャドウ）効果を追加するために使われます。
+  ox-shadow: [Xオフセット] [Yオフセット] [ぼかし半径] [色]; */
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+  /* transform: 対象となるCSSプロパティ（例：scale, rotate, translate など）
+0.2s: アニメーションの継続時間（0.2秒）ease: イージング関数（開始はゆっくり → 中間は速く → 終了はゆっくり） */
+}
+
+.slot:hover {
+  transform: scale(1.1);
+}
+
+/* Buttons */
+.stopbutton,
+.startbutton {
+  margin-top: 10px;
+  /* margin-top は CSS のプロパティで、要素の上側のマージン領域を設定します。正の数を指定すると、隣との間が遠くなるように配置され、負の数を指定すると、近くなるように配置します。 */
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #4a90e2;
+
+  border: none;
+  /* border: none; は、CSSで使われるプロパティで、要素の枠線（ボーダー）を表示しないようにする指定 */
+
+  border-radius: 5px;
+  /* border-radius は、枠線の角の丸みを設定するプロパティです。
+5px は、角の丸みの半径をピクセル単位で指定しています。
+数値が大きいほど、角がより丸くなります。 */
+
+  cursor: pointer;
+  /* cursor は、マウスカーソルの種類を指定するプロパティです。
+pointer は、リンクやボタンのように、クリック可能な要素に使われる「指の形」のカーソルです。 */
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.stopbutton:hover,
+.startbutton:hover {
+  /* :hover は、マウスカーソルがその要素の上に乗ったときに適用されるスタイルです。 */
+  background-color: #357ABD;
+  transform: translateY(-3px);
+  /* transform: translateY(-3px); は、CSSで使われるプロパティで、要素を縦方向に少し上に移動させる効果があります。これは主にホバー（マウスを乗せた）時のアニメーション */
+  /* transform: は、要素の形や位置を変えるためのCSSプロパティです。 */
+  /* translateY(-3px) は、Y軸（縦方向）に -3px 移動するという意味 */
+}
+
+/* Slot machine control area */
+.control {
+  margin-top: 30px;
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333;
+  font-weight: bold;
+  /* font-weight は、文字の太さ（ウェイト）を指定するプロパティです。
+  normal	標準の太さ（通常の文字）
+bold	太字
+lighter	親要素より細く
+bolder	親要素より太く
+100〜900	数値で細かく指定（400が通常、700が太字） */
+}

@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+  <meta charset="UTF-8">
+  <title>FND39 SHO-HP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- <header> は HTML の要素で、導入的なコンテンツ、ふつうは導入部やナビゲーション補助のグループを表します。見出し要素だけでなく、ロゴ、検索フォーム、著者名、その他の要素を含むこともできます。 -->
+    <h1>FND39 SHO-HP</h1>
+    <nav>
+      <!-- <nav> は HTML の要素で、現在の文書内の他の部分や他の文書へのナビゲーションリンクを提供するためのセクションを表します。ナビゲーションセクションの一般的な例としてメニュー、目次、索引などがあります。 -->
+      <ul>
+        <!--  <ul>：順序なしリスト（unordered list）意味：箇条書きのリストを作るときに使う。特徴：番号はつかず、「・」や「●」などのマークで表示される。 -->
+        <li><a href="#myprofile">★自己紹介</a></li>
+        <!-- <li>：リストの項目（list item）意味：リストの中の1つの項目を表します。 -->
+        <li><a href="#workprofile">★業務紹介</a></li>
+        <li><a href="#apuri">★アプリ</a></li>
+        <!--  <a href="URL">：リンク（anchor）意味：他のページや場所に移動するためのリンクを作ります。 -->
+        <li><a href="#other">★その他</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- <main> は、HTMLのタグのひとつで、ページの主要なコンテンツ部分を表すために使います。 -->
+    <section id="myprofile">
+      <!-- <section> は HTML の要素で、文書の自立した一般的なセクション（区間）を表します。そのセクションを表現するより意味的に具体的な要素がない場合に使用します -->
+
+      <h2>★自己紹介</h2>
+      <div class="name">
+        <div>
+          <h3>name:西村翔仁</h3>
+          <p><img src="C:\Users\1479189\Desktop\foundations\画像\冬　名前.png" alt="error" width="500" height="500" /></p>
+        </div>
+        <div>
+          <h4>誕生日:8月7日</h4>
+          <img src="C:\Users\1479189\Desktop\foundations\画像\himawari.png" alt="error" class="sunfliwer" width="300" height="300" />
+
+        </div>
+      </div>
+
+      <p class="double-line"></p>
+
+      <div>
+        <ul>
+
+          <li>職業：会社員</li><br>
+          <img src="C:\Users\1479189\Desktop\foundations\画像\shigotohajime_man_good.png" alt="error" width="300"
+            height="300" />
+          <hr>
+
+          <li>所在地：愛知</li><br>
+          <img src="C:\Users\1479189\Desktop\foundations\画像\aiti.png" alt="error" width="300" height="300" />
+          <hr>
+
+          <li>趣味：ポケカ</li><br>
+          <img src="C:\Users\1479189\Desktop\foundations\画像\poke.jpg" alt="error" width="300" height="300" />
+          <img src="C:\Users\1479189\Desktop\foundations\画像\ka-do.jpg" alt="error" width="140" height="150" />
+          <img src="C:\Users\1479189\Desktop\foundations\画像\ka-do2.jpg" alt="error" width="140" height="150" />
+          <li>使用デッキ：ドラパルトデッキ、オーロンゲデッキ、バチュルバレット</li>
+          <img src="C:\Users\1479189\Desktop\foundations\画像\Image.png" alt="error" width="200" height="150" />
+        </ul>
+    </section>
+    <hr>
+    <h2>★業務紹介</h2>
+    <section id="workprofile">
+      <div>
+        <ul>
+          <li>現場塗装team取組事例➀</li>
+          <img src="C:\Users\1479189\Desktop\foundations\画像\DX講習会日程.png" alt="error" width="600" height="300" />
+
+        </ul>
+      </div>
+
+
+
+    </section>
+    <hr>
+    <h2>★アプリ</h2>
+    <section id="apuri">
+      <div class="container">
+        <h1>数字ストップマシーン</h1>
+        <div id="bluebox"></div>
+        <div class="slot-container">
+          <div>
+            <div id="slot1" class="slot">7</div>
+            <button id="stopButton1" class="stopbutton">ストップ</button>
+          </div>
+          <div>
+            <div id="slot2" class="slot">7</div>
+            <button id="stopButton2" class="stopbutton">ストップ</button>
+          </div>
+          <div>
+            <div id="slot3" class="slot">7</div>
+            <button id="stopButton3" class="stopbutton">ストップ</button>
+          </div>
+        </div>
+        <div>
+          <div class="control">
+            <button id="startbutton" class="startbutton">スタート</button>
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </section>
+
+    <hr>
+
+    <section id="other">
+      <h2>★画像引用元</h2>
+      <p>https://www.irasutoya.com/</p>
+    </section>
+  </main>
+
+  <footer>
+    <!-- <footer> は HTML の要素で、直近の区分コンテンツまたは区分化ルート要素のフッターを表します。フッターには通常、そのセクションの著者に関する情報、関連文書へのリンク、著作権情報等を含めます。 -->
+    <p>&copy; FND39　お疲れ様でした！！</p>
+    <!--&copy;：コピーライト記号（©）「この作品には著作権があります」ということを明示するために使います。　  -->
+  </footer>
+</body>
+
+</html>
